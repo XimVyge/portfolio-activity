@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 80px 0;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 24px;
+        }
+
+        header img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 30px 0;
+        }
+
+        .section-title {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .list-unstyled li {
+            font-size: 18px;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .skills-list li {
+            margin-bottom: 10px;
+        }
+
+        .project-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .img-container {
+            padding: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="text-center">
+        <h1>Xim Vyge Narciso</h1>
+        <p class="lead">Software Developer</p>
+        <img src="images/my_pic.jpg" alt="Photo" class="img-fluid">
+    </header>
+
+    <section id="personal-info" class="container mt-5">
+        <h2 class="section-title">Introduction</h2>
+        <div class="card">
+            <div class="card-body">
+                <p style="text-align: justify;">
+                    Hello, I'm Xim, a passionate software developer with
+                    a knack for turning ideas into elegant and efficient
+                    solutions. With 2 years of experience in the tech industry,
+                    I've honed my skills in JS, Python, Java, and C#.
+                    My journey in software development has been driven by a constant
+                    curiosity to explore new technologies and a commitment to delivering
+                    high-quality code that solves real-world problems. Whether it's
+                    building web applications, crafting clean and maintainable code,
+                    or collaborating with cross-functional teams, I thrive on the challenges
+                    and opportunities that this dynamic field offers. Let's code the future together!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5">
+        <h2 class="section-title">Skills</h2>
+        <div class="row mx-auto">
+            <div class="col-sm-3 mb-3 mb-sm-0">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/js.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">JavaScript</h5>
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar w-25"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/python.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Python</h5>
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar w-75"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/java.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Java</h5>
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar w-50"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/csharp.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">C#</h5>
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar w-50"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container mt-5">
+        <h2 class="section-title">Projects</h2>
+        <div class="card project-card mb-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3 class="card-title">Portfolio Website</h3>
+                        <p class="card-text">A responsive portfolio website built using Bootstrap and customized with
+                            CSS.
+                        </p>
+                        <a href="#" class="btn btn-primary" target="_blank">This site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card project-card mb-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-10">
+                        <h3 class="card-title">Nihongo Wakaranai</h3>
+                        <p class="card-text">A Japanese Language Proficiency Test Reviewer App</p>
+                    </div>
+                    <div class="col-sm-2">
+                        <img src="images/Wakaranai_Logo.png" style="height: 150px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center"></footer>
+</body>
+
+</html>
